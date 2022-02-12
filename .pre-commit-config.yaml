@@ -20,6 +20,8 @@ repos:
   rev: v0.931
   hooks:
     - id: mypy
+      additional_dependencies: [pydantic]
+
 - repo: https://github.com/PyCQA/isort
   rev: 5.10.1
   hooks:
