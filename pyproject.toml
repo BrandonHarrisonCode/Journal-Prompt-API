@@ -8,13 +8,21 @@ authors = ["Brandon Harrison <brandonharrisoncode@gmail.com>"]
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2"
 pre-commit = "^2.17.0"
 flake8 = "^4.0.1"
 black = "^22.1.0"
 mypy = "^0.931"
 isort = "^5.10.1"
 vulture = "^2.3"
+pylint = "^2.12.2"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 79
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
