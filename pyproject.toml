@@ -8,6 +8,11 @@ authors = ["Brandon Harrison <brandonharrisoncode@gmail.com>"]
 python = "^3.10"
 fastapi = "^0.73.0"
 hypercorn = "^0.13.2"
+SQLAlchemy = "^1.4.31"
+databases = "^0.5.5"
+pydantic = "^1.9.0"
+asyncpg = "^0.25.0"
+psycopg2 = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
@@ -25,6 +30,9 @@ include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
 line_length = 79
+
+[tool.pylint.MASTER]
+extension-pkg-allow-list = ["pydantic"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
